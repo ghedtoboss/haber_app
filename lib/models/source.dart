@@ -1,5 +1,5 @@
 class Source {
-  Null? id;
+  String? id;
   String? name;
 
   Source({this.id, this.name});
@@ -10,9 +10,9 @@ class Source {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['name'] = this.name;
+    final Map<String, dynamic> data = Map<String, dynamic>();
+    data['id'] = id;
+    data['name'] = name;
     return data;
   }
 }

@@ -1,7 +1,9 @@
-import 'package:haber_app/models/articles.dart';
-import 'package:haber_app/models/news.dart';
-import 'package:http/http.dart' as http;
 import 'dart:convert';
+
+import 'package:http/http.dart' as http;
+
+import '../models/articles.dart';
+import '../models/news.dart';
 
 class NewsService {
   static NewsService _singleton = NewsService._internal();
